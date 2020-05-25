@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8377c9f2ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>About</title>
+</head>
+
+<body>
+        <nav>
+          <input type="checkbox" id="check">
+           <img src ="./img/flooop.svg" class="logo" alt="">
+            <label for="check" class="checkbtn" >
+                <i class="fas fa-bars" id ="mobile_menu"onclick="myFunction(event)"></i>
+            </label>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="active" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class ="contact" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+      
+        </nav>
+        <h1 class="text-center">About</h1>
+
+        <div class="home">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti temporibus maxime, eum officia ex iure, accusamus itaque fugiat quas exercitationem aliquid ipsum sit, corporis minima eius a quidem. Aspernatur.</p>
+          </div>
+          
+
+  
+        <script>
+  
+          var x=1;
+          
+          function myFunction(event) { 
+              
+          if(document.getElementById("mobile_menu"))
+          {
+           
+              x++;
+             console.log(x);
+             if(x == 2)
+             {
+              document.querySelector("h1").style.marginTop= "210px";
+              
+             }
+             if(x==3)
+             {
+                document.querySelector("h1").style.marginTop= "0px";
+                x=1;
+             }
+             
+             
+          }
+          
+          else{
+          
+              return;
+             
+          }
+          
+          }
+     
+      
+           </script>
+        
+
+    
+</body>
+</html>

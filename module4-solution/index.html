@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/console.js"></script>
+    <script src="https://kit.fontawesome.com/8377c9f2ae.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/EasePack.min.js"></script>
+    <title>Welcome</title>
+</head>
+<body>
+
+<div class="overlay">
+
+    <h1>Welcome</h1>
+    <span>To Profile</span>
+
+</div>
+
+
+<div class="container">
+     <h1>Search</h1>
+     <input id ="text1" placeholder="Search Profile">
+     <button onclick="fn1()" id ="btn1"> <i class="fa fa-search fa-2x"></i> </button>
+     <h3>**Check Google Console To Verify This Work**</h3>
+
+
+</div>
+
+
+<div class="after-search" id= "trd">
+
+    <h4 id="name">name</h4>
+
+
+</div>
+
+<script>
+    
+  TweenMax.to(".overlay h1" , 2 ,
+  {
+      opacity: 0,
+      y:-60,
+      ease: Expo.easeInOut
+  }
+  )
+  
+  
+  TweenMax.to(".overlay span" , 2 ,
+  {
+      delay : .3,
+      opacity:0,
+      y:-60,
+      ease: Expo.easeInOut
+  }
+  )
+  
+  
+  TweenMax.to(".overlay" , 2 ,
+  {
+
+      delay : 1,
+      top: "-100%",
+      ease: Expo.easeInOut
+  }
+  )
+
+  
+
+
+
+</script>
+    
+</body>
+</html>
